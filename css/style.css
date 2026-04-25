@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+/* ===================== COLORS ===================== */
+
+:root {
+    --main-color: rgba(30, 90, 138, 0.75);
+    --accent-color: #a50d25;
+    --text-color: #eee;
+    --bg-dark: #000;
+    --overlay-dark: rgba(0,0,0,0.3);
+    --gray-background: #f8f8f8;
+    --gray-trext: #444;
+}
+/* ===================== NAVBAR ===================== */
+
+.custom-navbar {
+    background: var(--main-color);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand img {
+    display: block;
+}
+
+.logo-text {
+    font-family: "Great Vibes", cursive;
+    font-size: 3.5rem;
+    color: var(--text-color);
+}
+
+.nav-link {
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.5s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+    text-shadow: 0 0 5px rgba(196,155,99,0.5);
+}
+
+/*
+.nav-link {
+    color: #eee;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-image: linear-gradient(to right, #a73737, #7a2828);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #fff;
+    background-size: 100% 2px;
+}
+*/
+/* ===================== END OF NAVBAR ===================== */
+
+/* ===================== HERO ===================== */
+
+.hero {
+    min-height: 100vh;
+    background: url('../images/hero_background_img.webp') center/cover no-repeat;
+    position: relative;
+}
+
+.hero-title {
+    font-family: "Great Vibes", cursive;
+    font-size: 6rem;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--overlay-dark);
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #a73737 0%, #7a2828 51%, #a73737 100%);
+    background-size: 200% auto;
+    color: var(--text-color);
+
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+
+    border: none;
+    border-radius: 9px; /* lep pill oblik */
+    outline: none;
+
+    display: inline-block;
+    transition: 0.5s;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    color: var(--text-color);
+}
+/* ===================== END OF HERO ===================== */
+
+/* ===================== ABOUT ===================== */
+.about-section {
+    background: var(--gray-background);
+}
+
+.about-title {
+    color: var(--main-color);;
+}
+
+.paragraph-text {
+    line-height: 1.7;
+    color: var(--gray-trext);
+    font-size: 1.1rem;
+}
+
+.section-subtitle {
+    display: block;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
+/* ===================== END OF ABOUT ===================== */
+
+/* ===================== SPECIALTY ===================== */
+
+.specialty-card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.specialty-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.specialty-card:hover {
+    transform: translateY(-6px);
+}
+
+.card-title {
+    color: var(--accent-color);
+}
+/* ===================== END OF SPECIALITY ===================== */
+
+/* ===================== GALLERY MAIN PAGE ===================== */
+
+.gallery-page-title {
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.gallery-page-text {
+    text-align: center;
+    margin: 0 auto 40px;
+    color: var(--main-color);
+    font-size: 1.4rem;
+}
+
+.gallery-panels {
+    display: flex;
+    gap: 20px;
+    min-height: 70vh;
+}
+
+.gallery-panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    position: relative;
+    transition: flex 0.7s ease-in;
+    overflow: hidden;
+    min-height: 600px;
+}
+
+.gallery-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.28);
+}
+
+.gallery-panel h3 {
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    margin: 0;
+    opacity: 0;
+    z-index: 2;
+}
+
+.gallery-panel.active {
+    flex: 5;
+}
+
+.gallery-panel.active h3 {
+    opacity: 1;
+}
+
+/* ===================== END OF GALLERY MAIN PAGE ===================== */
+
+/* ===================== CONTACT ===================== */
+.section-subtitle {
+    color: var(--accent-color);
+}
+
+.contact-title {
+    color: var(--main-color);
+}
+
+.contact-section {
+    background-color: var(--gray-background);
+}
+
+.contact-section p {
+    color: #555;
+    line-height: 1.6;
+}
+
+iframe {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+/* ===================== END OF CONTACT ===================== */
+
+/* ===================== FOOTER ===================== */
+.footer {
+    background: var(--main-color);
+}
+
+.menu-footer {
+    background: #1e5a8a; !important;
+}
+
+.footer p {
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+.footer-link {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: var(--accent-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.footer h4, .footer h5 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+/* ===================== END OF FOOTER ===================== */
+
+/* ===================== GALLERY ===================== */
+.gallery-page img {
+    height: 70vh;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+/* ===================== END OF GALLERY ===================== */
+
+/* ===================== MENU ===================== */
+
+.menu-page {
+    background-image: url("../images/restoran-dalmacija-menu-image.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.menu-section {
+    background: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    min-height: 100vh;
+}
+
+.menu-inner {
+    max-width: 850px;
+}
+
+.menu-page-title {
+    font-size: 2.8rem;
+}
+
+.menu-category-title {
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin: 50px 0;
+}
+
+.menu-item {
+    padding: 16px 0;
+}
+
+.menu-item-row {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+}
+
+.menu-item-left {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.menu-item h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.menu-number,
+.menu-allergens,
+.menu-price,
+.menu-description {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.menu-number {
+    min-width: 28px;
+    font-size: 0.95rem;
+}
+
+.menu-allergens {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.menu-dots {
+    flex-grow: 1;
+    border-bottom: 2px dotted #aaa;
+}
+
+.menu-price {
+    white-space: nowrap;
+    min-width: 80px;
+    text-align: right;
+    font-size: 0.95rem;
+}
+
+.menu-description {
+    margin-left: 38px;
+    margin-top: 6px;
+    font-size: 0.95rem;
+}
+
+.menu-notes {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.menu-notes p:first-child {
+    margin-bottom: 20px;
+}
+
+.menu-notes p:not(:first-child) {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* DRINKS */
+
+.drinks-page {
+    background-image: url('../images/restoran-dalmacija-drinks.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.drinks-section {
+    background: rgba(0, 0, 0, 0.45);;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.drinks-inner {
+    max-width: 850px;
+}
+
+.drinks-item {
+    padding: 16px 0;
+}
+
+.drinks-item-row {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+}
+
+.drinks-item-left {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.drinks-number,
+.drinks-price,
+.drinks-description {
+    color: #ffffff;
+}
+
+.drinks-number {
+    min-width: 28px;
+    font-size: 0.95rem;
+}
+
+.drinks-item h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.drinks-dots {
+    flex-grow: 1;
+    border-bottom: 2px dotted #ffffff;
+}
+
+.drinks-price {
+    white-space: nowrap;
+    min-width: 100px;
+    text-align: right;
+    font-size: 0.95rem;
+}
+
+.drinks-description {
+    margin-left: 38px;
+    margin-top: 6px;
+    font-size: 0.95rem;
+}
+
+.drinks-footer-center {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.drinks-footer-left {
+    text-align: center;
+    margin: 2px 0;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+    .gallery-panels {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .gallery-panel {
+        flex: 0 0 80px !important;
+        min-height: unset;
+        overflow: hidden;
+        transition: flex-basis 0.4s ease;
+    }
+    .gallery-panel.active {
+        flex: 0 0 250px !important;
+    }
+    .gallery-panel h3 {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu-item-row {
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .menu-item-left {
+        white-space: normal;
+    }
+
+    .menu-dots {
+        display: none;
+    }
+
+    .menu-price {
+        min-width: auto;
+        font-weight: 600;
+    }
+
+    .menu-description {
+        margin-left: 0;
+    }
+
+    .menu-page-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* MENU + DRINKS zajedničko */
+    .menu-item-row,
+    .drinks-item-row {
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .menu-item-left,
+    .drinks-item-left {
+        white-space: normal;
+    }
+
+    .menu-dots,
+    .drinks-dots {
+        display: none;
+    }
+
+    .menu-price,
+    .drinks-price {
+        min-width: auto;
+        font-weight: 600;
+    }
+
+    .menu-description,
+    .drinks-description {
+        margin-left: 0;
+    }
+
+    .menu-page-title {
+        font-size: 2rem;
+    }
+}

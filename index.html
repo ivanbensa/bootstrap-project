@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap"
+            rel="stylesheet" />
+
+
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <title>Restoran Dalmacija</title>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+
+            <!-- LOGO -->
+            <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+                <img src="images/croatia_logo.png" width="60">
+                <span class="logo-text">Dalmacija</span>
+            </a>
+
+            <!-- TOGGLER (mobile) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- LINKS -->
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Willkommen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Speisekarte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="drinks.html">Getränkekarte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Bildergalerie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+<!-- END OF NAVBAR -->
+
+<!-- HERO -->
+<section class="hero d-flex align-items-center justify-content-center text-center text-white">
+
+    <div class="container position-relative z-2">
+        <h1 class="display-3 hero-title">Restaurant Dalmacija</h1>
+        <p class="lead mt-3 mb-4">
+            Traditionelle kroatische Spezialitäten seit 1980
+        </p>
+        <a href="menu.html" class="btn btn-lg rounded-pill px-5 py-3 btn-grad">
+            Speisekarte ansehen
+        </a>
+    </div>
+
+</section>
+<!-- END OF HERO -->
+
+<!-- ABOUT -->
+<section class="about-section py-5">
+    <div class="container">
+        <div class="row align-items-center  mt-lg-3 mb-1 mb-lg-5 g-5">
+
+            <div class="col-lg-6">
+                <span class="section-subtitle">Willkommen im Restaurant Dalmacija</span>
+                <h2 class="about-title mb-4">
+                    Traditionelle kroatische Küche seit 1980
+                </h2>
+                <p class="paragraph-text">
+                    Seit über 40 Jahren steht das Restaurant Dalmacija in Berlin für
+                    traditionelle kroatische Küche, herzliche Gastfreundschaft und eine
+                    gemütliche Atmosphäre.
+                </p>
+                <p class="paragraph-text">
+                    Genießen Sie hausgemachte Spezialitäten, frisch zubereitete Gerichte
+                    und im Sommer entspannte Stunden auf unserer Terrasse – ein Stück
+                    Dalmatien mitten in Berlin.
+                </p>
+            </div>
+
+            <div class="col-lg-6">
+                <img src="assets/img/restoran-dalmacija-inside.webp"
+                     class="img-fluid rounded-3"
+                     alt="Restaurant Dalmacija Berlin">
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- END OF ABOUT -->
+
+<!-- SPECIALTY -->
+<section class="specialties py-5">
+    <div class="container">
+
+        <!-- HEADER -->
+
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <span class="section-subtitle">Unsere Küche</span>
+            <h2 class="mb-3 about-title">Kroatische Spezialitäten</h2>
+            <p class="paragraph-text">
+                Entdecken Sie traditionelle Gerichte aus der kroatischen Küche,
+                frisch zubereitet und mit viel Liebe serviert.
+            </p>
+        </div>
+
+        <!-- CARDS -->
+
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm specialty-card">
+
+                    <img src="assets/img/grill.jpg" class="card-img-top" alt="">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Grill Spezialitäten :</h5>
+                        <p class="card-text paragraph-text">Ćevapčići, Pljeskavica und viele weitere Klassiker vom Grill.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm specialty-card">
+
+                    <img src="assets/img/gulash.jpg" class="card-img-top" alt="">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Hausgemachte Gerichte :</h5>
+                        <p class="card-text paragraph-text">Traditionelle dalmatinische Rezepte wie Gulasch oder Mućkalica.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm specialty-card">
+
+                    <img src="assets/img/fish.jpg" class="card-img-top" alt="">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Fischgerichte :</h5>
+                        <p class="card-text paragraph-text">Frischer Fisch und Meeresfrüchte inspiriert von der Adria.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm specialty-card">
+
+                    <img src="assets/img/banana-desert.jpg" class="card-img-top" alt="">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Desserts :</h5>
+                        <p class="card-text">Süße Klassiker wie Eisbecher, Bananasplit und Coupe Dänemark.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END OF SPECIALTY -->
+
+<!-- GALLERY MAIN PAGE -->
+<main class="gallery-main">
+    <section class="gallery-section-page py-5">
+        <div class="container">
+
+            <div class="gallery-inner mx-auto">
+                <div class="text-center mb-5">
+                    <h1 class="gallery-page-title">Bildergalerie</h1>
+                    <p class="gallery-page-text mx-auto">
+                        Entdecken Sie Eindrücke aus unserem Restaurant, unserer Terrasse
+                        und unserer Küche.
+                    </p>
+                </div>
+
+                <div class="gallery-panels">
+                    <div class="gallery-panel active"
+                         style="background-image: url('images/restoran-dalmacija-inside.webp');">
+                        <h3>Restaurant</h3>
+                    </div>
+
+                    <div class="gallery-panel"
+                         style="background-image: url('images/restoran-dalmacija-diploma.webp');">
+                        <h3>Terrasse</h3>
+                    </div>
+
+                    <div class="gallery-panel"
+                         style="background-image: url('images/restoran-dalmacija-beer.webp');">
+                        <h3>Spezialitäten</h3>
+                    </div>
+
+                    <div class="gallery-panel"
+                         style="background-image: url('images/restoran-dalmacija-menu-image.webp');">
+                        <h3>Atmosphäre</h3>
+                    </div>
+
+                    <div class="gallery-panel"
+                         style="background-image: url('images/restoran-dalmacija-drinks.webp');">
+                        <h3>Kroatische Küche</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+<!-- END OF GALLERY MAIN PAGE -->
+
+<!-- CONTACT -->
+<section class="contact-section py-5" id="kontakt">
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <!-- LEFT -->
+            <div class="col-lg-6">
+                <span class="section-subtitle">Kontakt</span>
+                <h2 class="contact-title mt-2 mb-4">Besuchen Sie uns</h2>
+
+                <p>
+                    Wir freuen uns darauf, Sie im Restaurant Dalmacija begrüßen zu dürfen.
+                    Reservierungen sind telefonisch möglich.
+                </p>
+
+                <div class="contact-details mt-4">
+                    <p><strong>Adresse:</strong> Quäkerstraße 2, 13403 Berlin</p>
+                    <p><strong>Telefon:</strong>+49 30 413 4103</p>
+                    <p><strong>Email:</strong> info@restaurant-dalmacija.de</p>
+                </div>
+
+                <div class="opening-hours mt-4">
+                    <h5>Öffnungszeiten</h5>
+                    <p>Montag: geschlossen</p>
+                    <p>Dienstag – Sonntag: 12:00 – 21:00</p>
+                </div>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="col-lg-6">
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2670.650276639989!2d13.31001928514486!3d52.57267399551621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a853f5944243bb%3A0xb0c7d014ddbb1e0!2sRestaurant%20Dalmacija!5e0!3m2!1sen!2sde!4v1772835727423!5m2!1sen!2sde"
+                        width="100%"
+                        height="400"
+                        style="border:0; border-radius:10px;"
+                        allowfullscreen=""
+                        loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- END OF CONTACT -->
+
+<!-- FOOTER -->
+<footer class="footer text-white pt-5">
+    <div class="container">
+
+        <div class="row g-4 pb-5">
+
+            <!-- BRAND -->
+            <div class="col-md-4">
+                <h4>Restaurant Dalmacija</h4>
+                <p>
+                    Traditionelle kroatische Küche in gemütlicher Atmosphäre
+                    seit 1980 in Berlin.
+                </p>
+            </div>
+
+            <!-- NAVIGATION -->
+            <div class="col-md-4">
+                <h5>Navigation</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="footer-link">Willkommen</a></li>
+                    <li><a href="menu.html" class="footer-link">Speisekarte</a></li>
+                    <li><a href="drinks.html" class="footer-link">Getränkekarte</a></li>
+                    <li><a href="#kontakt" class="footer-link">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="col-md-4">
+                <h5>Kontakt</h5>
+                <p>Quäkerstraße 2, 13403 Berlin</p>
+                <p><a href="tel:+49304134103" class="footer-link">+49 30 413 4103</a></p>
+                <p><a href="mailto:info@restaurant-dalmacija.de" class="footer-link">
+                    info@restaurant-dalmacija.de
+                </a></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom text-center py-3">
+        <p class="mb-0">© 2026 Restaurant Dalmacija. Alle Rechte vorbehalten.</p>
+    </div>
+</footer>
+<!-- END OF FOOTER -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
